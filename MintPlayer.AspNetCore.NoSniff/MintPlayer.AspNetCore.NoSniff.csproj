@@ -1,9 +1,31 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<IsPackable>true</IsPackable>
+		<Version>6.0.0</Version>
+		<Authors>Pieterjan De Clippel</Authors>
+		<Company>MintPlayer</Company>
+		<Description>ASP.NET Core middleware that adds the X-Content-Type-Options: nosniff header.</Description>
+		<PackageProjectUrl>https://github.com/MintPlayer/MintPlayer.AspNetCore.NoSniff</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/MintPlayer/MintPlayer.AspNetCore.NoSniff</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageId>MintPlayer.AspNetCore.NoSniff</PackageId>
+		<PackageTags>ASP.NET;NoSniff</PackageTags>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<OutputType>Library</OutputType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 
 </Project>
