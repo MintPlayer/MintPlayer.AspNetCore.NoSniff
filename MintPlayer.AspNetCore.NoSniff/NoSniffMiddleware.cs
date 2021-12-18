@@ -20,7 +20,7 @@
     // Extension method used to add the middleware to the HTTP request pipeline.
     public static class NoSniffMiddlewareExtensions
     {
-        public static IApplicationBuilder UseNoSniffMiddleware(this IApplicationBuilder builder)
+        public static IApplicationBuilder UseNoSniff(this IApplicationBuilder builder)
         {
             return builder.UseMiddleware<NoSniffMiddleware>();
         }
