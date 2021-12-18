@@ -12,8 +12,15 @@
 
         public async Task Invoke(HttpContext httpContext)
         {
+            httpContext.Response.OnStarting((state) =>
+            {
+                var context = (HttpContext)state;
+                context.Response.Headers.XContentTypeOptions = "nosniff";
+                return Task.CompletedTask;
+
+            }, httpContext);
+
             await next(httpContext);
-            httpContext.Response.Headers.XContentTypeOptions = "nosniff";
         }
     }
 

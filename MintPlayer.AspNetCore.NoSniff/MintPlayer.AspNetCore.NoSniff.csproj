@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 
 		<IsPackable>true</IsPackable>
-		<Version>6.0.1</Version>
+		<Version>6.0.2</Version>
 		<Authors>Pieterjan De Clippel</Authors>
 		<Company>MintPlayer</Company>
 		<Description>ASP.NET Core middleware that adds the X-Content-Type-Options: nosniff header.</Description>
